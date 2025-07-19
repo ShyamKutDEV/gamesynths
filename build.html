@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Build Your Game | GameSynths</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Comic Sans MS, cursive, sans-serif;
+      background: linear-gradient(to bottom right, #000, #fff);
+      color: #fff;
+      padding: 50px 20px;
+    }
+
+    section#contact {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #700202;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Contact Form Section -->
+  <section id="contact">
+    <h2>Ready to Synthesize Your Vision?</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="desc">Game Idea / Project Description:</label>
+      <textarea id="desc" name="desc" rows="4" required></textarea>
+
+      <label for="budget">Budget:</label>
+      <select id="budget" name="budget" required>
+        <option value="under-5k">&lt; $5K</option>
+        <option value="5k-15k">$5K–$15K</option>
+        <option value="15k-plus">$15K+</option>
+        <option value="20k-25k">$20K+</option>
+      </select>
+
+      <label for="timeline">Timeline:</label>
+      <input type="text" id="timeline" name="timeline" required />
+
+      <button type="submit">Let’s Talk</button>
+    </form>
+  </section>
+
+</body>
+</html>
